@@ -1,13 +1,17 @@
+
+/* This is the universal selector*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This give the background of the body of the webpage a light gray tone*/
 body {
-    background-color: #d9dcd6;
+    background-color: #c6c9c3;
 }
 
+/*This give the header padding, makes the container background blue, and the default text color white*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,93 +19,71 @@ body {
     color: #ffffff;
 }
 
+/*This makes the "Horiseon" header element in line with the list element items in the header div*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*This makes the "seo" in "Horiseon" a grayish tone */
 .header h1 .seo {
-    color: #ca6d21;
+    color: #c2c0bd;
 }
 
+/*This floats the div containing the list elements to the right side of the header, gives it padding on the top, gives it a bit of space to the right, and makes the default font size 20px*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+    }
 
-.header div ul {
-    list-style-type: none;
-}
-
+/*This makes the list elements have no bullet points, places it in line with "Horiseon" and gives each list element some space to its left*/
 .header div ul li {
-    display: inline-block;
     margin-left: 25px;
+    list-style-type: none; 
+    display: inline-block;
 }
 
+/*This makes the hyperlinks white, with no underline*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*Gives the paragraph element a default font size of 16px*/
 p {
     font-size: 16px;
 }
 
+/*This makes the first image take the entire width of the page and limits its height to 800px with 25px of space at the bottom*/
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
+/*This makes the images with this class float to the left of the content within the same div*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*This makes the images with this class float to the right of the content within the same div*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*This makes the div containing the search engine optimization, social media marketing, and online reputation management descriptions take 75% of the page's width and puts the image and text in the divs within the main div in line with each other*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.all-benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/*This makes each div within the .content div 300px tall, have 20px of space at the bottom outside the div perimeter, with 50px of space between the content and the perimeter of the div*/
 .content-element {
     margin-bottom: 20px;
     padding: 50px;
@@ -111,22 +93,60 @@ p {
     color: #ffffff;
 }
 
+/*This makes the image within the .content-element div no larger than 200px*/
 .content-element img {
     max-height: 200px;
 }
 
+/*This makes the font size of the header of the .content-element 36px with 20px of space between the header and paragraph elements */
 .content-element h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.footer {
-    padding: 30px;
+/*This makes the div containing the benefits of Horiseon float to the right, take up 20% of the page's width, be 10% taller than the div next to it and makes it blue. It also give some space between this div and the would-be footer at the bottom, whose lack thereof is referenced later.*/
+.all-benefits {
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: right;
+    width: 20%;
+    height: 110%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*This makes each benefit within the all-benefits div have 32px of space at the bottom between each one and makes the text color white*/
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*This makes each benefit header centered in the div and have 10px of space between the header and the image below it */
+.benefit h3 {
+    margin-bottom: 10px;
     text-align: center;
 }
 
+/*This makes each benefit image no more than 150px with 10px of space on the top and bottom while centering the image with an automatic margin*/
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*This makes the footer div centered on the page with 30px of padding around each side and have a font size of 20px. However, because the mock-up does not show a footer, its display will be hidden*/
+.footer {
+    display: none;
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;   
+    
+}
+
+/*This makes the footer heading specifically 20px rather than 36px as stipulated in a different h2 selector*/
 .footer h2 {
-    font-size: 20px;
+ font-size: 20px;
 }
