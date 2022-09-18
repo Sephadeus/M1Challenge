@@ -6,7 +6,7 @@ This project for the UConn Coding Bootcamp is essentially a faux-company's (Hori
 The purpose of this project was to consolidate CSS selectors and attributes into as few lines of code as possible, and modifying the HTML accordingly so that the webpage responds in the appropriate manner.
 
 ## Visuals
-Check out the screenshot in the related Github repository!
+Check out the screenshot in the related Github repository or visit this link here --> [Imgur](https://i.imgur.com/bIWUraQ.jpg)
 
 ## Installation
 This project is a webpage which requires no installation. Simply click the URL on Github or copy and paste this link --> (https://sephadeus.github.io/M1Challenge/) to navigate to the webpage on the browser.
